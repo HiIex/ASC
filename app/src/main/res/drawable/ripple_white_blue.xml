@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="#CB04F8">
+    <!--显示默认的 drawable-->
+    <item android:drawable="@drawable/border_blue_transparent" />
+</ripple>

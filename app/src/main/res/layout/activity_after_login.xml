@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AfterLoginActivity"
+    android:background="@drawable/hualian">
+
+    <include layout="@layout/title"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45sp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginStart="5sp"
+        android:layout_marginEnd="5sp"
+        android:layout_above="@+id/guide"/>
+
+    <LinearLayout
+        android:id="@+id/guide"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#D0FFFFFF"
+        android:gravity="center">
+
+        <com.example.asc.activity.ui.ImageTextButton
+            android:id="@+id/left_button"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="1dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <com.example.asc.activity.ui.ImageTextButton
+            android:id="@+id/middle_button"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <com.example.asc.activity.ui.ImageTextButton
+            android:id="@+id/middle2_button"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <com.example.asc.activity.ui.ImageTextButton
+            android:id="@+id/right_button"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/floating_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.asc.activity.ui.DragFloatActionButton
+            android:id="@+id/music_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="70sp"
+            android:layout_marginEnd="0sp"
+            android:elevation="16sp"
+            app:fabCustomSize="55sp"
+            app:maxImageSize="38sp"
+            android:src="@drawable/play"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

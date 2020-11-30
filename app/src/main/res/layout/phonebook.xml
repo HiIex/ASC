@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/border_white_transparent">
+
+    <com.example.asc.activity.ui.CircleImageView
+        android:id="@+id/imageView_head"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:background="@drawable/haed_boy"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="7sp"/>
+
+    <ImageView
+        android:id="@+id/imageView_name"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:background="@drawable/name"
+        android:layout_toEndOf="@+id/imageView_head"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="7sp"/>
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:layout_toEndOf="@+id/imageView_name"
+        android:layout_marginTop="2sp"
+        android:layout_marginStart="7sp"
+        android:visibility="visible"
+        android:text="@string/AuthorName"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:layout_toEndOf="@+id/imageView_name"
+        android:layout_marginTop="2sp"
+        android:layout_marginStart="7sp"
+        android:visibility="invisible"
+        android:hint="@string/AuthorName"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <ImageButton
+        android:id="@+id/update_name"
+        android:layout_width="31sp"
+        android:layout_height="31sp"
+        android:layout_toEndOf="@+id/editText_name"
+        android:layout_marginStart="7sp"
+        android:layout_marginTop="9sp"
+        android:background="@drawable/ripple_change"
+        android:visibility="visible"/>
+
+    <ImageButton
+        android:id="@+id/save_name"
+        android:layout_width="31sp"
+        android:layout_height="31sp"
+        android:layout_toEndOf="@+id/editText_name"
+        android:layout_marginStart="7sp"
+        android:layout_marginTop="9sp"
+        android:background="@drawable/ripple_save"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/imageView_phone"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:background="@drawable/phonenumber"
+        android:layout_toEndOf="@+id/imageView_head"
+        android:layout_below="@+id/imageView_name"
+        android:layout_marginBottom="6sp"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="12sp"/>
+
+    <TextView
+        android:id="@+id/textView_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:layout_toEndOf="@+id/imageView_phone"
+        android:layout_below="@+id/textView_name"
+        android:layout_marginTop="0sp"
+        android:layout_marginStart="9sp"
+        android:visibility="visible"
+        android:text="@string/defaultPhone"
+        android:layout_marginBottom="6sp"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/editText_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:layout_toEndOf="@+id/imageView_phone"
+        android:layout_below="@+id/editText_name"
+        android:layout_marginTop="2sp"
+        android:layout_marginStart="9sp"
+        android:visibility="invisible"
+        android:hint="@string/defaultPhone"
+        android:layout_marginBottom="6sp"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <ImageButton
+        android:id="@+id/update_phone"
+        android:layout_width="31sp"
+        android:layout_height="31sp"
+        android:layout_toEndOf="@+id/editText_phone"
+        android:layout_below="@+id/update_name"
+        android:layout_marginStart="7sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="6sp"
+        android:background="@drawable/ripple_change"
+        android:visibility="visible"/>
+
+    <ImageButton
+        android:id="@+id/save_phone"
+        android:layout_width="31sp"
+        android:layout_height="31sp"
+        android:layout_toEndOf="@+id/editText_phone"
+        android:layout_below="@+id/update_name"
+        android:layout_marginStart="7sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="6sp"
+        android:background="@drawable/ripple_save"
+        android:visibility="invisible"/>
+
+    <com.example.asc.activity.ui.ShineButton
+        android:id="@+id/shineButton_special"
+        android:layout_width="27sp"
+        android:layout_height="27sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15sp"
+        android:layout_marginTop="10sp"
+        android:src="@color/DarkGray"
+        app:btn_fill_color="#FFE608"
+        app:allow_random_color="false"
+        app:enable_flashing="false"
+        app:big_shine_color="#F4DD0F"
+        app:click_animation_duration="200"
+        app:shine_animation_duration="1500"
+        app:shine_turn_angle="10"
+        app:small_shine_offset_angle="20"
+        app:shine_distance_multiple="1.5"
+        app:small_shine_color="#E8DF8D"
+        app:shine_count="8"
+        app:siShape="@drawable/star"/>
+
+    <ImageButton
+        android:id="@+id/imageButton_delete"
+        android:layout_width="29sp"
+        android:layout_height="29sp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/shineButton_special"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="15sp"
+        android:background="@drawable/delete"/>
+
+
+
+
+
+
+</RelativeLayout>
